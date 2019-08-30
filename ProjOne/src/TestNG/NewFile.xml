@@ -1,0 +1,7 @@
+<suite name="Regression Suite">
+<test name="Regression Test Cycle-1">
+<classes>
+<class name="TestNG.NewTest"/>
+</classes>
+</test>
+</suite>
