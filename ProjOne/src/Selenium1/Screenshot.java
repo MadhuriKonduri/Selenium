@@ -3,9 +3,11 @@ package Selenium1;
 import java.io.File;
 import java.io.IOException;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.io.FileHandler;
 
@@ -24,7 +26,13 @@ public class Screenshot {
 		
 		TakesScreenshot Scrshot=(TakesScreenshot)driver;
 		File f=Scrshot.getScreenshotAs(OutputType.FILE);
-		FileHandler.copy(f, new File("C:\\Users\\mounikaReddy\\Desktop\\Madhuri\\123.png"));
+		FileHandler.copy(f, new File("C:\\Users\\mounikaReddy\\Desktop\\Madhuri\\1234.png"));
+		
+		
+		
+		String title=driver.getTitle();
+		boolean b=title.matches("Google");
+		System.out.println(b);
 		driver.close();
 
 	}
