@@ -13,7 +13,7 @@ import org.openqa.selenium.io.FileHandler;
 
 public class Screenshot {
 
-	public static void main(String[] args) throws IOException, InterruptedException {
+	public static void main(String[] args) throws Exception {
 		
 		
 		
